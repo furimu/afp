@@ -15,12 +15,12 @@ class Send_Profile(commands.Cog):
 
         async for message in boy.history(limit=None):
             if message.author == member:
-                return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{mmessage.jump_url}")
+                return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{message.jump_url}")
 
         else:
             async for message in girl.history(limit = None):
                 if message.author == member:
-                    return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{mmessage.jump_url}")
+                    return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{message.jump_url}")
 
 def setup(bot):
     bot.add_cog(Send_Profile(bot))
