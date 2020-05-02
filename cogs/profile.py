@@ -23,4 +23,4 @@ class Send_Profile(commands.Cog):
                     return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{mmessage.jump_url}")
 
 def setup(bot):
-    bot.add_cog(Send_Profile(bot)
+    bot.add_cog(Send_Profile(bot))
