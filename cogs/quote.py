@@ -13,6 +13,8 @@ class Message_url(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
+        if message.author.bot:
+            return
         for ids in re.finditer(self.url_discord_message, message.content):
             if message.guild.id == int(ids['guild']):
                 mes = await fetch_message_from_id(
