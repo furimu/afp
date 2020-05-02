@@ -18,7 +18,7 @@ class Send_Profile(commands.Cog):
                 return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{mmessage.jump_url}")
 
         else:
-            async def message in girl.history(limit = None):
+            async def for message in girl.history(limit = None):
                 if message.author == member:
                     return await ctx.send(f"{str(message.author)}さんのプロフィールはこちらです。{mmessage.jump_url}")
 
