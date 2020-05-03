@@ -458,7 +458,7 @@ class Music(commands.Cog):
         else:
             ctx.music_state.voice_client = await destination.connect()
 
-    @commands.command(aliases = ["p"])
+    @commands.command()
     async def play(self, ctx, *, request: str = None):
         """プレイリストに曲を追加し、再生します。
         youtube_dlにより自動検索が可能です。
