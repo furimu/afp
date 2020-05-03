@@ -6,7 +6,7 @@ class Send_Profile(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def profile(self, ctx, member: discord.Member = None):
+    async def p(self, ctx, member: discord.Member = None):
         if member is None:
             member = ctx.author
 
