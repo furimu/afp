@@ -14,3 +14,11 @@ class Count(commands.Cog):
                 vcm.append(member.id)
 
         random.shuffle(vcm)
+
+        e = discord.Embed(
+            description=',\n'.join(ctx.guild.get_member(m) for m in vcm)
+
+        await ctx.send(embed=e)
+
+def setup(bot):
+    bot.add_cog(Count(bot))
