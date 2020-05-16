@@ -33,7 +33,7 @@ class Count(commands.Cog):
             cou += 1
 
         e = discord.Embed(
-            description=',\n'.join(f"{k}: {ctx.guild.get_member(m).mention}" for k, m in vcd.items)
+            description=',\n'.join(f"{k}: {ctx.guild.get_member(m).mention}" for k, m in vcd.items())
 
         await ctx.send(embed=e)
 
