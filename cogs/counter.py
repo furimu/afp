@@ -16,7 +16,7 @@ class Count(commands.Cog):
         random.shuffle(vcm)
 
         e = discord.Embed(
-            description=',\n'.join(ctx.guild.get_member(m) for m in vcm)
+            description=',\n'.join(ctx.guild.get_member(m) for m in vcm))
 
         await ctx.send(embed=e)
 
