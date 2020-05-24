@@ -94,7 +94,7 @@ class Auto_Delete(commands.Cog):
                 self.load['auto_delete'].remove(o)
 
 
-e = Embed(
+        e = Embed(
             title = '登録してるチャンネル',
             description = ','.join(self.bot.get_channel(int(x)).mention for x in self.load['auto_delete'])
         )
