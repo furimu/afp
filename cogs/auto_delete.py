@@ -92,6 +92,7 @@ class Auto_Delete(commands.Cog):
                 self.bot.get_channel(int(o))
             except:
                 self.load['auto_delete'].remove(o)
+                date.save(self.load, 'auto_delete')
 
 
         e = Embed(
