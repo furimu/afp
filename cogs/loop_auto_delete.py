@@ -33,6 +33,8 @@ class Auto_Delete(commands.Cog):
             if str(channel) in self.load.keys():
                 
                 target = self.bot.get_channel(int(channel))
+                if target is None:
+                    continue
                 if self.load[str(target.id)] == 'on':
                     
                     async for message in target.history(limit = None):
