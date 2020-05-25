@@ -107,7 +107,12 @@ class Auto_Delete(commands.Cog):
         )
         for k, v in self.load.items():
             if k != 'auto_delete':
-                channel = self.bot.get_channel(int(k))
+                try:
+                    print(self.bot.get_channel(int(k)).name)
+                    channel = self.bot.get_channel(int(k))
+                except:
+                    self.load['auto_delete'].remove(k)
+                date.save(self.load, 'auto_delete')
                 e.add_field(
                     name = channel.name,
                     value = self.load[str(channel.id)],
