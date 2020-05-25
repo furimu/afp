@@ -97,8 +97,7 @@ class Auto_Delete(commands.Cog):
                 await ctx.send(self.bot.get_channel(int(o)).mention)
                 a.append(o)
             except:
-                self.load['auto_delete'].remove(o)
-                date.save(self.load, 'auto_delete')
+                continue
 
 
         e = Embed(
