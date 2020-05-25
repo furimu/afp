@@ -110,7 +110,7 @@ class Auto_Delete(commands.Cog):
                     print(self.bot.get_channel(int(k)).name)
                     channel = self.bot.get_channel(int(k))
                 except:
-                    self.load['auto_delete'].remove(k)
+                    continue
                 date.save(self.load, 'auto_delete')
                 e.add_field(
                     name = channel.name,
