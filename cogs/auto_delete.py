@@ -89,7 +89,7 @@ class Auto_Delete(commands.Cog):
     async def ad_list(self, ctx):
         for o in self.load['auto_delete']:
             try:
-                self.bot.get_channel(int(o)
+                self.bot.get_channel(int(o))
             except:
                 self.load['auto_delete'].remove(o)
 
