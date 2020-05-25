@@ -94,7 +94,7 @@ class Auto_Delete(commands.Cog):
 
         for o in self.load['auto_delete']:
             try:
-                await ctx.send(self.bot.get_channel(int(o)).mention)
+                print(self.bot.get_channel(int(o)).name)
                 a.append(o)
             except:
                 continue
