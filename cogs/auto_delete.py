@@ -87,9 +87,15 @@ class Auto_Delete(commands.Cog):
 
     @commands.command()
     async def ad_list(self, ctx):
+        
+
+        a=[]
+        
+
         for o in self.load['auto_delete']:
             try:
                 self.bot.get_channel(int(o))
+                a.append(o)
             except:
                 self.load['auto_delete'].remove(o)
                 date.save(self.load, 'auto_delete')
@@ -97,7 +103,7 @@ class Auto_Delete(commands.Cog):
 
         e = Embed(
             title = '登録してるチャンネル',
-            description = ','.join(self.bot.get_channel(int(x)).mention for x in self.load['auto_delete'])
+            description = ','.join(self.bot.get_channel(int(x)).mention for x in a)
         )
         for k, v in self.load.items():
             if k != 'auto_delete':
