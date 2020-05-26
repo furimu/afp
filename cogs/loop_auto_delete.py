@@ -142,11 +142,12 @@ class Auto_Delete(commands.Cog):
 
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
-        if len(err_) == 0:
-            return
-        await admin.send("a")
-        e=Embed(title="以下のチャンネルでメッセージを削除する権限がありません", description=f"{self.bot.get_channel(e).mention for e in err_}")
-        await admin.send(embed=e)
+        else:
+            if len(err_) == 0:
+                return
+            await admin.send("a")
+            e=Embed(title="以下のチャンネルでメッセージを削除する権限がありません", description=f"{self.bot.get_channel(e).mention for e in err_}")
+            await admin.send(embed=e)
 
 def setup(bot):
     bot.add_cog(Auto_Delete(bot))
