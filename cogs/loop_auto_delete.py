@@ -27,6 +27,7 @@ class Auto_Delete(commands.Cog):
         if not self.load.get('auto_delete'):
             return
 
+        err_= []
         for channel in self.load['auto_delete']:
             if channel is None:
                 continue
@@ -136,11 +137,11 @@ class Auto_Delete(commands.Cog):
 
 
                         except errors.Forbidden:
-                            await admin.send(f'{target.name}-{message.author.name}-{message.content}')
-                            await admin.send('----------------------------------------')
+                            err_.append(target.id)
 
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
+        a
 
 def setup(bot):
     bot.add_cog(Auto_Delete(bot))
