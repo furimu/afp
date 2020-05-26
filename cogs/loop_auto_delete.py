@@ -21,7 +21,7 @@ class Auto_Delete(commands.Cog):
     async def audel(self):
         
         await self.bot.wait_until_ready()
-        admin = self.bot.get_channel(679693385224945740)
+        admin = self.bot.get_channel(714735564641009785)
         self.load = date.load('auto_delete')
 
         if not self.load.get('auto_delete'):
@@ -142,7 +142,7 @@ class Auto_Delete(commands.Cog):
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
         e=Embed(title="以下のチャンネルでメッセージを削除する権限がありません", description=f"{self.bot.get_channel(e).mention for e in err_}")
-        await ctx.send(embed=e)
+        await admin.send(embed=e)
 
 def setup(bot):
     bot.add_cog(Auto_Delete(bot))
