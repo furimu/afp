@@ -141,7 +141,8 @@ class Auto_Delete(commands.Cog):
 
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
-        e=
+        e=Embed(title="以下のチャンネルでメッセージを削除する権限がありません", description=f"self.bot.get_channel(e) for e in err_)
+        await ctx.send(embed=e)
 
 def setup(bot):
     bot.add_cog(Auto_Delete(bot))
