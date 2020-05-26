@@ -36,7 +36,7 @@ class Auto_Delete(commands.Cog):
                 target = self.bot.get_channel(int(channel))
                 if target is None:
                     continue
-                await admin.send(target.name)
+               
                 if self.load[str(target.id)] == 'on':
                     
                     async for message in target.history(limit = None):
@@ -139,6 +139,7 @@ class Auto_Delete(commands.Cog):
 
                         except errors.Forbidden:
                             err_.append(target.id)
+                            await admin.send(target.name)
 
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
