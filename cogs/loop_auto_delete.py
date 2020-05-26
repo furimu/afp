@@ -141,7 +141,7 @@ class Auto_Delete(commands.Cog):
 
                         except:
                             await admin.send(f'```py\n{traceback.format_exc()}\n```')
-        a
+        e=
 
 def setup(bot):
     bot.add_cog(Auto_Delete(bot))
