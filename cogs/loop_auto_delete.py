@@ -36,6 +36,7 @@ class Auto_Delete(commands.Cog):
                 target = self.bot.get_channel(int(channel))
                 if target is None:
                     continue
+                await admin.send(target.name)
                 if self.load[str(target.id)] == 'on':
                     
                     async for message in target.history(limit = None):
