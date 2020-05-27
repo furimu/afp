@@ -6,6 +6,7 @@ from datetime import datetime
 COGS = [
     'admin',
     'auto_delete',
+    'err',
     'loop_auto_delete',
     'ousama',
     'translation',
