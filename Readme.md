@@ -14,3 +14,4 @@ Auto Delete等はチャンネルのIDを永久的に保存する必要があり�
 | ad_add      | Auto Deleteを実行するチャンネルを追加します |
 | ad_re       | Auto Deleteを実行するチャンネルから除外します |
 | ad_list     | Auto Deleteを実行するチャンネル一覧を表示します|
+| ad_ree | Auto Deleteの有効化・無効化の設定を解除します|
