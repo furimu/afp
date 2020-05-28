@@ -15,7 +15,6 @@ Auto Delete等はチャンネルのIDを永久的に保存する必要があり�
 |Auto Delete| ad_re       | Auto Deleteを実行するチャンネルから除外します |
 |Auto Delete| ad_list     | Auto Deleteを実行するチャンネル一覧を表示します|
 |Auto Delete| ad_ree | Auto Deleteの有効化・無効化の設定を解除します|
-
 |Game|    王様ゲーム    | 王様ゲームを始めます|
 |Music|play | 指定された音楽を再生します|
 |Music|pause|曲の再生を1時停止します|
