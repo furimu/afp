@@ -28,3 +28,4 @@ Auto Delete等はチャンネルのIDを永久的に保存する必要があり�
 |Playlist|repeat|プレイリスト内の音楽をリピートします|
 |Playlist|shuffle|プレイリストをシャッフルします|
 
+## Playlistカテゴリーは **afp:playlist コマンド ** と入力してください
