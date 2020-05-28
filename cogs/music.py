@@ -555,8 +555,7 @@ class Music(commands.Cog):
 
     @commands.command(aliases=["sk"])
     async def skip(self, ctx):
-        """現在再生中の曲をスキップする投票を行います。
-        `minskips`コマンドで、スキップに必要な最低投票数を設定できます。
+        """現在再生中の曲をスキップする
         """
       
         # Check if the song has to be skipped
