@@ -10,13 +10,13 @@ Auto Delete等はチャンネルのIDを永久的に保存する必要があり�
 
 |カテゴリー| コマンドの名前 | 説明|
 |:-----------:|:-----------:|:--------:
-|Auto Delete| ad_ [on | off]|Auto Deleteをオンにするかオフにするか |
-|Auto Delete| ad_add チャンネル[名前・メンション]| Auto Deleteを実行するチャンネルを追加します |
-|Auto Delete| ad_re チャンネル[名前・メンション] | Auto Deleteを実行するチャンネルから除外します |
+|Auto Delete| ad_ [on / off]|Auto Deleteをオンにするかオフにするか |
+|Auto Delete| ad_add チャンネル[名前/メンション]| Auto Deleteを実行するチャンネルを追加します |
+|Auto Delete| ad_re チャンネル[名前/メンション] | Auto Deleteを実行するチャンネルから除外します |
 |Auto Delete| ad_list     | Auto Deleteを実行するチャンネル一覧を表示します|
-|Auto Delete| ad_ree チャンネル[名前・メンション] | Auto Deleteの有効化・無効化の設定を解除します|
+|Auto Delete| ad_ree チャンネル[名前/メンション] | Auto Deleteの有効化・無効化の設定を解除します|
 |Game|    王様ゲーム    | 王様ゲームを始めます|
-|Music|play [URL | タイトル]| 指定された音楽を再生します|
+|Music|play [URL /タイトル]| 指定された音楽を再生します|
 |Music|pause|曲の再生を1時停止します|
 |Music|resume|曲の再生を再開します|
 |Music|set_volume [ボリューム]|ボリュームを設定します|
