@@ -9,10 +9,15 @@ class Count(commands.Cog):
    
 
     @commands.command(name='ランダム')
-    async def np(self, ctx, role:discord.Role):
+    async def np(self, ctx, role:discord.Role=None):
         vcd = {}
         vcm= []
-        for member in role.members:
+        if role is None:
+            members = ctx.author.voice.channel.members
+
+        else:
+            members= role.members
+        for member in members:
             if member.voice is not None and member.voice.channel.id == ctx.author.voice.channel.id:
                 vcm.append(member.id)
 
