@@ -51,12 +51,6 @@ class Admin(commands.Cog, command_attrs=dict(hidden=True)):
         
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
-    @load.error
-    async def load_error(self, ctx, error):
-        try:
-            await ctx.send(f'```py\n{traceback.format_exc()}\n```')
-        except:
-            print(traceback.format_exc())
         
     @commands.command()
     async def restart(self, ctx):
