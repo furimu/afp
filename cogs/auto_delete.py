@@ -13,6 +13,7 @@ class Auto_Delete(commands.Cog):
                         
     
     @commands.command()
+    @commands.has_permissions(manage_messages=True )
     async def ad_add(self, ctx, channels: commands.Greedy[TextChannel]):
         for channel in channels:
 
@@ -33,6 +34,7 @@ class Auto_Delete(commands.Cog):
 
     
     @commands.command()
+    @commands.has_permissions(manage_messages=True )
     async def ad_re(self, ctx, channels: commands.Greedy[TextChannel]):
 
        
@@ -54,6 +56,7 @@ class Auto_Delete(commands.Cog):
 
 
     @commands.command()
+    @commands.has_permissions(manage_messages=True ) 
     async def ad_(self, ctx, enable: str, channels: commands.Greedy[TextChannel] = None):
         
         if channels is None:
@@ -73,6 +76,7 @@ class Auto_Delete(commands.Cog):
                 await ctx.send('**afp:ad_ on or off**で入力してね(´・ω・`)')
 
     @commands.command()
+    @commands.has_permissions(manage_messages=True ) 
     async def ad_ree(self, ctx, channels: commands.Greedy[TextChannel] = None):
         
         if channels is None:
