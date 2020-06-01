@@ -1,5 +1,6 @@
 from discord.ext import commands
 import traceback
+import discord
 class Error(commands.Cog):
     def __init__(self, bot):
         self.bot=bot
@@ -10,6 +11,9 @@ class Error(commands.Cog):
         
         if isinstance(error, commands.CommandNotFound):
             await ctx.send("そのコマンドは存在しないよ！")
+
+        elif isinstance(error, commands.MissingPermissions):
+            await ctx.send("あなたの権限が無いから実行出来ないよ")
  
         else:
             msg= list(traceback.TracebackException.from_exception(error).format())
