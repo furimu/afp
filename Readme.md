@@ -27,5 +27,7 @@ Auto Delete等はチャンネルのIDを永久的に保存する必要があり�
 |Playlist|show|プレイリストを表示します|
 |Playlist|repeat|プレイリスト内の音楽をリピートします|
 |Playlist|shuffle|プレイリストをシャッフルします|
+|Profile|p [ユーザー名\メンション]| 指定されたユーザーのプロフィールを表示します。指定されなかったらコマンド送信者のプロフィールを送信します。|
+|Trans|trans 
 
 ## Playlistカテゴリーは **afp:playlist コマンド ** と入力してください
