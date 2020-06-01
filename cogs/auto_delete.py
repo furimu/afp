@@ -27,11 +27,6 @@ class Auto_Delete(commands.Cog):
             else:
                 await ctx.send('そのチャンネルは既に登録されています')
 
-
-    @ad_add.error
-    async def ad_add_error(self, ctx, error):
-        await ctx.send(f'```py\n{traceback.format_exc()}\n```')
-
     
     @commands.command()
     @commands.has_permissions(manage_messages=True)
@@ -48,11 +43,6 @@ class Auto_Delete(commands.Cog):
                 await ctx.send(f'{channel.name}の登録を解除しました')
             else:
                 await ctx.send('そのチャンネルは登録されていません')
-
-
-    @ad_re.error
-    async def ad_re_error(self, ctx, error):
-        await ctx.send(f'```py\n{traceback.format_exc()}\n```')
 
 
     @commands.command()
