@@ -3,6 +3,8 @@ from discord import Embed
 class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        bot.remove_command("help")
+        
 
 
     @commands.command()
@@ -14,5 +16,5 @@ class Help(commands.Cog):
 
 
 def setup(bot):
-    bot.remove_command("help")
+   
     bot.add_cog(Help(bot))
